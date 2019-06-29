@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8e591d13-e107-4d82-b744-2cb608300a3a}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>orderer</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/sjb_projects</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/kjh_projects</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\..\common\config-util.cpp" />
+    <ClCompile Include="..\..\common\escc.cpp" />
+    <ClCompile Include="..\..\common\jsoncpp.cpp" />
+    <ClCompile Include="..\..\common\net_config.cpp" />
+    <ClCompile Include="..\..\common\utils.cpp" />
+    <ClCompile Include="..\..\network\evpp_server.cpp" />
+    <ClCompile Include="..\..\network\evpp_tcpConn.cpp" />
+    <ClCompile Include="block\block.cpp" />
+    <ClCompile Include="block\blockCutter.cpp" />
+    <ClCompile Include="block\blockManagerWorker.cpp" />
+    <ClCompile Include="block\blockManager.cpp" />
+    <ClCompile Include="config\orderer_config.cpp" />
+    <ClCompile Include="consensus\kafkaConsensus.cpp" />
+    <ClCompile Include="core\orderer_core.cpp" />
+    <ClCompile Include="kafka\KafkaConsumer.cpp" />
+    <ClCompile Include="kafka\KafkaEventCb.cpp" />
+    <ClCompile Include="kafka\KafkaProducer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="transaction\collectedTXPool.cpp" />
+    <ClCompile Include="transaction\transactionCollectorWorker.cpp" />
+    <ClCompile Include="transaction\transactionCollector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\config-util.h" />
+    <ClInclude Include="..\..\common\escc.h" />
+    <ClInclude Include="..\..\common\json-forwards.h" />
+    <ClInclude Include="..\..\common\json.h" />
+    <ClInclude Include="..\..\common\net_config.h" />
+    <ClInclude Include="..\..\common\utils.h" />
+    <ClInclude Include="..\..\data_define\data_def.h" />
+    <ClInclude Include="..\..\data_define\path_def.h" />
+    <ClInclude Include="..\..\network\evpp_server.h" />
+    <ClInclude Include="..\..\network\evpp_tcpConn.h" />
+    <ClInclude Include="block\block.h" />
+    <ClInclude Include="block\blockCutter.h" />
+    <ClInclude Include="block\blockManagerWorker.h" />
+    <ClInclude Include="block\blockManager.h" />
+    <ClInclude Include="config\orderer_config.h" />
+    <ClInclude Include="consensus\kafkaConsensus.h" />
+    <ClInclude Include="core\orderer_core.h" />
+    <ClInclude Include="kafka\KafkaCunsumer.h" />
+    <ClInclude Include="kafka\KafkaEventCb.h" />
+    <ClInclude Include="kafka\KafkaProducer.h" />
+    <ClInclude Include="transaction\collectedTXPooll.h" />
+    <ClInclude Include="transaction\transactionCollectorWorker.h" />
+    <ClInclude Include="transaction\transactionCollector.h" />
+    <ClInclude Include="util\ConcurrentQueue.h" />
+    <ClInclude Include="util\StopWatch.h" />
+    <ClInclude Include="util\StringFormat.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <LibraryDependencies>crypto;evpp;rdkafka;rdkafka++;pthread;secp256k1;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <LibraryDependencies>crypto;evpp;rdkafka;rdkafka++;pthread;secp256k1;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

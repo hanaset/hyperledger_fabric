@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="peer_core.cpp" />
+    <ClCompile Include="peer_tx_pool.cpp" />
+    <ClCompile Include="..\..\common\config-util.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\jsoncpp.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\net_config.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\channel.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\database.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="chaincode\chaincode_support.cpp">
+      <Filter>chaincode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\escc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\evpp_server.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\evpp_tcpConn.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="endorser_core.cpp" />
+    <ClCompile Include="..\..\chaincode\chaincode_support\chaincode_support\chaincode_handler.cpp">
+      <Filter>chaincode\chaincode_support\chaincode_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\chaincode\chaincode_support\chaincode_support\chaincode_support_service.cpp">
+      <Filter>chaincode\chaincode_support\chaincode_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\chaincode\chaincode_support\test\test_cc_support.cpp">
+      <Filter>chaincode\chaincode_support\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protos\chaincode.grpc.pb.cc">
+      <Filter>protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protos\chaincode.pb.cc">
+      <Filter>protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\chaincode\chaincode_support\test\init_db.cpp">
+      <Filter>chaincode\chaincode_support\test</Filter>
+    </ClCompile>
+    <ClCompile Include="committer_core.cpp" />
+    <ClCompile Include="..\..\network\evpp_client.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\evpp_client_manager.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\databaseTest.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{9ac78891-d3fd-4622-9e6d-d36fd48f164f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data_define">
+      <UniqueIdentifier>{d9ec58b2-a55b-402c-aaa5-aaf0ee1db407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{52cf2991-d179-49c3-a255-514687dcdc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="channel">
+      <UniqueIdentifier>{a8267cca-f28c-410a-965d-7290e1beed70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode">
+      <UniqueIdentifier>{c3e5b9d2-6a09-461a-b75e-595d624a6acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode">
+      <UniqueIdentifier>{fa73b0e4-434d-4720-aba1-ea3c18c3376e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode_support">
+      <UniqueIdentifier>{0a319322-5da6-4a17-9af1-683c8b6ecbcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode\cmd">
+      <UniqueIdentifier>{8dd00cd6-e9e3-4170-9440-66ebc39a920e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode\shim">
+      <UniqueIdentifier>{ac028694-2024-43b9-aa65-dcca501446bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode\cmd\mtcc">
+      <UniqueIdentifier>{6b536d86-0ed4-444b-bb6f-f4400c184752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode\cmd\vtcc">
+      <UniqueIdentifier>{fbb9eb6e-02a2-4848-9b2a-226360002b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode_support\chaincode_support">
+      <UniqueIdentifier>{2997087f-69e9-4977-a124-0cf707336534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chaincode\chaincode_support\test">
+      <UniqueIdentifier>{c0cc535d-47fa-417b-9051-7fcb48a0b66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protos">
+      <UniqueIdentifier>{768588fa-4d3b-4c4c-89b6-ec46e0e975f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protos\go">
+      <UniqueIdentifier>{7219bc02-dd5b-454e-96e3-b8ca23881618}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\data_define\data_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="peer_core.h" />
+    <ClInclude Include="peer_tx_pool.h" />
+    <ClInclude Include="..\..\common\config-util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\json.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\json-forwards.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\database.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\channel.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="chaincode\chaincode_support.h">
+      <Filter>chaincode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\escc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\evpp_server.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\evpp_tcpConn.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="endorser_core.h" />
+    <ClInclude Include="..\..\chaincode\chaincode_support\chaincode_support\chaincode_handler.h">
+      <Filter>chaincode\chaincode_support\chaincode_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\chaincode\chaincode_support\chaincode_support\chaincode_support_service.h">
+      <Filter>chaincode\chaincode_support\chaincode_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\container.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protos\chaincode.grpc.pb.h">
+      <Filter>protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protos\chaincode.pb.h">
+      <Filter>protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data_define\path_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="committer_core.h" />
+    <ClInclude Include="..\..\network\evpp_client.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\evpp_client_manager.h">
+      <Filter>network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\chaincode\chaincode\cmd\mtcc\mtcc.go">
+      <Filter>chaincode\chaincode\cmd\mtcc</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\cmd\vtcc\vtcc.go">
+      <Filter>chaincode\chaincode\cmd\vtcc</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\shim\chaincode.go">
+      <Filter>chaincode\chaincode\shim</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\shim\connection.go">
+      <Filter>chaincode\chaincode\shim</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\shim\handler.go">
+      <Filter>chaincode\chaincode\shim</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\shim\interfaces.go">
+      <Filter>chaincode\chaincode\shim</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode_support\Makefile">
+      <Filter>chaincode\chaincode_support</Filter>
+    </None>
+    <None Include="..\..\protos\chaincode.proto">
+      <Filter>protos</Filter>
+    </None>
+    <None Include="..\..\protos\go\chaincode.pb.go">
+      <Filter>protos\go</Filter>
+    </None>
+    <None Include="..\..\chaincode\chaincode\shim\config.go">
+      <Filter>chaincode\chaincode\shim</Filter>
+    </None>
+  </ItemGroup>
+</Project>

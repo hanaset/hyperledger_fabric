@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "orderer", "orderer\orderer.vcxproj", "{8E591D13-E107-4D82-B744-2CB608300A3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F484BF51-BF86-4AB4-A541-622D07C36559}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|ARM.Build.0 = Debug|ARM
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|ARM64.Build.0 = Debug|ARM64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|x64.ActiveCfg = Debug|x64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|x64.Build.0 = Debug|x64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|x86.ActiveCfg = Debug|x86
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Debug|x86.Build.0 = Debug|x86
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|ARM.ActiveCfg = Release|ARM
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|ARM.Build.0 = Release|ARM
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|ARM64.ActiveCfg = Release|ARM64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|ARM64.Build.0 = Release|ARM64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|x64.ActiveCfg = Release|x64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|x64.Build.0 = Release|x64
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|x86.ActiveCfg = Release|x86
+		{8E591D13-E107-4D82-B744-2CB608300A3A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFE89A38-0523-485C-9222-27D0A680BA52}
+	EndGlobalSection
+EndGlobal

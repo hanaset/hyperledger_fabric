@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\network\evpp_server.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\network\evpp_tcpConn.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="consensus\kafkaConsensus.cpp">
+      <Filter>consensus</Filter>
+    </ClCompile>
+    <ClCompile Include="core\orderer_core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\config-util.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\escc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\jsoncpp.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\net_config.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="kafka\KafkaConsumer.cpp">
+      <Filter>kafka</Filter>
+    </ClCompile>
+    <ClCompile Include="kafka\KafkaEventCb.cpp">
+      <Filter>kafka</Filter>
+    </ClCompile>
+    <ClCompile Include="kafka\KafkaProducer.cpp">
+      <Filter>kafka</Filter>
+    </ClCompile>
+    <ClCompile Include="config\orderer_config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="block\block.cpp">
+      <Filter>block</Filter>
+    </ClCompile>
+    <ClCompile Include="block\blockCutter.cpp">
+      <Filter>block</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction\collectedTXPool.cpp">
+      <Filter>transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction\transactionCollectorWorker.cpp">
+      <Filter>transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="block\blockManagerWorker.cpp">
+      <Filter>block</Filter>
+    </ClCompile>
+    <ClCompile Include="block\blockManager.cpp">
+      <Filter>block</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction\transactionCollector.cpp">
+      <Filter>transaction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="network">
+      <UniqueIdentifier>{39e27804-4b0e-4407-a2bd-139460394880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d307bb1d-ec55-4ae8-b1fc-aaea11dbaf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data_define">
+      <UniqueIdentifier>{5ac56a35-a10b-4e9f-81ad-c5374b6371d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="block">
+      <UniqueIdentifier>{7032f5bd-9550-4a6a-a58d-931c5ea150e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="consensus">
+      <UniqueIdentifier>{de930f55-1c0a-49ac-ad31-5b8ccfb3ad95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{6c796a9b-a5e7-4a30-8fe3-4aedcfad8365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kafka">
+      <UniqueIdentifier>{3b832d5d-5a00-4c24-8d2e-eb2f64a6d53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{df83b4cf-45f0-418b-acd6-98d471a71fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{864db8ad-22d6-4274-982a-4f13da14c830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\pool">
+      <UniqueIdentifier>{659c91ae-018c-4860-ad36-94a7efd21893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transaction">
+      <UniqueIdentifier>{7deee587-8de2-496c-8c1e-a7314e9f5c5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\network\evpp_server.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\network\evpp_tcpConn.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="util\ConcurrentQueue.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\StopWatch.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\StringFormat.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="consensus\kafkaConsensus.h">
+      <Filter>consensus</Filter>
+    </ClInclude>
+    <ClInclude Include="core\orderer_core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data_define\data_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data_define\path_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\config-util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\escc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\json.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\json-forwards.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\net_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="kafka\KafkaCunsumer.h">
+      <Filter>kafka</Filter>
+    </ClInclude>
+    <ClInclude Include="kafka\KafkaEventCb.h">
+      <Filter>kafka</Filter>
+    </ClInclude>
+    <ClInclude Include="kafka\KafkaProducer.h">
+      <Filter>kafka</Filter>
+    </ClInclude>
+    <ClInclude Include="config\orderer_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="block\block.h">
+      <Filter>block</Filter>
+    </ClInclude>
+    <ClInclude Include="block\blockCutter.h">
+      <Filter>block</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction\collectedTXPooll.h">
+      <Filter>transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction\transactionCollectorWorker.h">
+      <Filter>transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="block\blockManagerWorker.h">
+      <Filter>block</Filter>
+    </ClInclude>
+    <ClInclude Include="block\blockManager.h">
+      <Filter>block</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction\transactionCollector.h">
+      <Filter>transaction</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

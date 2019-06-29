@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data_define">
+      <UniqueIdentifier>{4275cb0c-9159-49ff-a0b3-c720e6dc4dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="channel">
+      <UniqueIdentifier>{f926e5ed-9b98-47e2-973a-a9f0ad7bf061}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\data_define\data_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\data_define\path_def.h">
+      <Filter>data_define</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\channel.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="channel\database.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="channel\channel.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channel\database.cpp">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
