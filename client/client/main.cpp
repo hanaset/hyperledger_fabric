@@ -5,7 +5,7 @@
 #include "../../common/net_config.h"
 #include "client_core.h"
 
-#define NET_CONFIG_PATH "/home/medium/medium-meetup-poc-2/config/net_deploy.conf.json"
+#define NET_CONFIG_PATH ""
 int main(int argc, char* argv[])
 {
     if (argc < 3)
